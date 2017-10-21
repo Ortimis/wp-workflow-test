@@ -18,13 +18,13 @@ class custom
 	 * Create Custom Post Types
 	 * @return The registered post type object, or an error object
 	 */
-	public function custom_post_type() 
+	public function custom_post_type()
 	{
 		$labels = array(
-			'name'               => _x( 'Books', 'post type general name', 'awps' ),
-			'singular_name'      => _x( 'Book', 'post type singular name', 'awps' ),
-			'menu_name'          => _x( 'Books', 'admin menu', 'awps' ),
-			'name_admin_bar'     => _x( 'Book', 'add new on admin bar', 'awps' ),
+			'name'               => _x( 'Kacheln', 'post type general name', 'awps' ),
+			'singular_name'      => _x( 'Kachel', 'post type singular name', 'awps' ),
+			'menu_name'          => _x( 'Kachel', 'admin menu', 'awps' ),
+			'name_admin_bar'     => _x( 'Kachel', 'add new on admin bar', 'awps' ),
 			'add_new'            => _x( 'Add New', 'book', 'awps' ),
 			'add_new_item'       => __( 'Add New Book', 'awps' ),
 			'new_item'           => __( 'New Book', 'awps' ),
@@ -34,7 +34,7 @@ class custom
 			'all_items'          => __( 'All Books', 'awps' ),
 			'search_items'       => __( 'Search Books', 'awps' ),
 			'parent_item_colon'  => __( 'Parent Books:', 'awps' ),
-			'not_found'          => __( 'No books found.', 'awps' ),
+			'not_found'          => __( 'Kein Inhalt gefunden.', 'awps' ),
 			'not_found_in_trash' => __( 'No books found in Trash.', 'awps' )
 		);
 
@@ -47,12 +47,12 @@ class custom
 			'show_in_menu'       => true,
 			'menu_icon'          => 'dashicons-book-alt',
 			'query_var'          => true,
-			'rewrite'            => array( 'slug' => 'book' ),
+			'rewrite'            => array( 'slug' => 'view' ),
 			'capability_type'    => 'post',
 			'has_archive'        => true,
 			'hierarchical'       => false,
 			'menu_position'      => 5, // below post
-			'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+			'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt' )
 		);
 
 		register_post_type( 'book', $args );
@@ -62,8 +62,8 @@ class custom
 	 * Flush Rewrite on CPT activation
 	 * @return empty
 	 */
-	public function rewrite_flush() 
-	{   
+	public function rewrite_flush()
+	{
 		// call the CPT init function
 		$this->custom_post_type();
 

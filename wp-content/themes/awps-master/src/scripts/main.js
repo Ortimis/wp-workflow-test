@@ -6,6 +6,7 @@ var $ = require( 'jquery' );
 // Import libraries
 import 'slick-carousel';
 import 'izimodal';
+import 'vide';
 
 // Import custom modules
 import App from'./modules/app.js';

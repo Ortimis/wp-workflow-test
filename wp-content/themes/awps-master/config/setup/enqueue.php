@@ -5,17 +5,17 @@ namespace awps\setup;
 /**
  * enqueue.
  */
-class enqueue 
+class enqueue
 {
     /*
         Contrusct class to activate actions and hooks as soon as the class is initialized
     */
-    public function __construct() 
+    public function __construct()
     {
         add_action('wp_enqueue_scripts', array($this, 'enqueue_scripts'));
     }
 
-    public function enqueue_scripts() 
+    public function enqueue_scripts()
     {
 
         // Deregister the built-in version of jQuery from WordPress
@@ -23,6 +23,8 @@ class enqueue
 
         // CSS
         wp_enqueue_style('main', get_template_directory_uri().'/assets/css/style.min.css', array(), '1.0.0', 'all');
+        wp_enqueue_style('fa', 'http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?ver=4.8.2', array(), '4.8.2', 'all');
+
 
         // JS
         wp_enqueue_script('main', get_template_directory_uri().'/assets/js/main.min.js', array(), '1.0.0', true);
