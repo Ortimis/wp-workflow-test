@@ -34,15 +34,30 @@ get_header(); ?>
           </section> <!-- .hero -->
           <section class="kacheln" id="kacheln">
             <div class="container">
-
               <div class="grid">
-                <a class="grid-item">
-                  
+
+                <a href="#" class="grid-item" style="background-image: url(https://static.pexels.com/photos/302889/pexels-photo-302889.jpeg);">
+									<div class="overlay"></div>
+									<div class="grid-item-content">
+										<h2>Tobias Berndt</h2>
+										<span>Charonte / Plutone</span>
+										<p>Lorem sdfoij sdfjs f dih sdhf sdfhosdf dfh </p>
+									</div>
                 </a>
+
                 <a class="grid-item">
 
                 </a>
                 <a class="grid-item">
+
+                </a>
+								<a class="grid-item">
+
+                </a>
+								<a class="grid-item">
+
+                </a>
+								<a class="grid-item">
 
                 </a>
 
