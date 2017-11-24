@@ -2,8 +2,8 @@
 	display: flex;
 	flex-direction: row;
 	box-sizing: border-box;
-	margin-right: -$gutter / 2;
-	margin-left: -$gutter / 2;
+	margin-right: $gutter;
+	margin-left: $gutter;
 	flex: 0 1 auto;
 	flex-wrap: wrap;
 

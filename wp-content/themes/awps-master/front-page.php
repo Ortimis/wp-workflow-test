@@ -36,30 +36,38 @@ get_header(); ?>
             <div class="container">
               <div class="grid">
 
-                <a href="#" class="grid-item" style="background-image: url(https://static.pexels.com/photos/302889/pexels-photo-302889.jpeg);">
-									<div class="overlay"></div>
-									<div class="grid-item-content">
-										<h2>Tobias Berndt</h2>
-										<span>Charonte / Plutone</span>
-										<p>Lorem sdfoij sdfjs f dih sdhf sdfhosdf dfh </p>
-									</div>
-                </a>
+								<?php
+								// WP_Query arguments
+								$args = array(
+									'post_type'              => array( 'book' ),
+									'post_status'            => array( 'publish' ),
+								);
 
-                <a class="grid-item">
+								// The Query
+								$query = new WP_Query( $args );
 
-                </a>
-                <a class="grid-item">
+								// The Loop
+								if ( $query->have_posts() ) {
+									while ( $query->have_posts() ) {
+										$query->the_post();
+										// do something ?>
+										<a href="<?php echo the_permalink(); ?>" class="grid-item" style="background-image: url(<?php echo the_post_thumbnail_url('full'); ?>);">
+											<div class="overlay"></div>
+											<div class="grid-item-content">
+												<h2><?php the_field( 'rolle' ); ?></h2>
+												<?php the_title( '<span>', '</span>' ); ?>
+												<?php// $excerpt = wp_trim_words( get_field('bezeichnung' ), $num_words = 10, $more = ' ...' ); ?>
+												<p><?php // echo $excerpt ?></p>
+											</div>
+										</a>
 
-                </a>
-								<a class="grid-item">
+								<?php	}
+								} else {
+									// no posts found
+								}
 
-                </a>
-								<a class="grid-item">
-
-                </a>
-								<a class="grid-item">
-
-                </a>
+								// Restore original Post Data
+								wp_reset_postdata(); ?>
 
 
               </div>

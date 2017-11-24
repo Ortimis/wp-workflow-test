@@ -1,9 +1,14 @@
 a {
 	@include transition(all $time $ease);
-
+	color: black;
 	&,
 	&:hover,
 	&:focus {
 		text-decoration: none;
+		color: $yellow;
 	}
+}
+
+.backlink {
+	margin-top: 30px;
 }
