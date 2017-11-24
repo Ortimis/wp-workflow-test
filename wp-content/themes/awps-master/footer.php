@@ -15,15 +15,16 @@
 
 	<footer id="colophon" class="site-footer container-fluid" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php
-				/* translators: %s: Github repo URL. */
-				echo esc_url( __( 'https://github.com/Alecaddd/awps', 'awps' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'awps' ), 'AWPS' ); ?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: %1: Theme name. */
-
-				/* translators: %2: Author name. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'awps' ), 'AWPS', '<a href="http://alecaddd.com/" rel="designer">Alecaddd</a>' ); ?>
+			<div class="container">
+				<div class="row justify-center">
+					<ul class="footer-menu">
+						<li> <a href="#">Impressum</a> </li>
+					</ul>
+				</div>
+				<div class="row justify-center">
+					<p class="copy-text">Resonance e.V. &copy; <?php echo date("Y"); ?></p> 
+				</div>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

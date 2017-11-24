@@ -47,7 +47,7 @@ class custom
 			'show_in_menu'       => true,
 			'menu_icon'          => 'dashicons-book-alt',
 			'query_var'          => true,
-			'rewrite'            => array( 'slug' => 'view' ),
+			'rewrite'            => array( 'slug' => 'info' ),
 			'capability_type'    => 'post',
 			'has_archive'        => true,
 			'hierarchical'       => false,
