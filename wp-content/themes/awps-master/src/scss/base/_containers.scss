@@ -8,7 +8,7 @@
     padding-right: $gutter;
     padding-left: $gutter;
     margin-bottom: 2em;
-    
+
     @include clearfix;
 }
 
@@ -16,7 +16,7 @@
     max-width: $xl;
 }
 
-.container-fluid {
+.container-fluid { 
     max-width: 100%;
 }
 
