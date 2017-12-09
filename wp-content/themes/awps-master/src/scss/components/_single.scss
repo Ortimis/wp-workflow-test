@@ -1,0 +1,40 @@
+
+
+.single-header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 500px;
+  padding-top: 2em;
+  text-align: right;
+  color: white;
+  text-shadow: 5px 1px 2px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  filter: gray;
+}
+
+.backlink {
+  color: white;
+  text-align: right;
+  width: 100%;
+  outline: 1px solid;
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.entry-title {
+  color: white;
+  text-align: right;
+  right: 0;
+  bottom: -400px;
+}
+
+.rolle {
+  right: 0;
+  bottom: -400px;
+}
+
+.entry-content {
+  text-align: justify;
+}

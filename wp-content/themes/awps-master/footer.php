@@ -18,11 +18,11 @@
 			<div class="container">
 				<div class="row justify-center">
 					<ul class="footer-menu">
-						<li> <a href="#">Impressum</a> </li>
+						<li> <a href="http://resonance.de/kontakt">Impressum</a> </li>
 					</ul>
 				</div>
 				<div class="row justify-center">
-					<p class="copy-text">Resonance e.V. &copy; <?php echo date("Y"); ?></p> 
+					<p class="copy-text">Resonance e.V. &copy; <?php echo date("Y"); ?></p>
 				</div>
 			</div>
 		</div><!-- .site-info -->

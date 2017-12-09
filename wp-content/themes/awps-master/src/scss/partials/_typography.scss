@@ -5,7 +5,7 @@
 
 body {
 	font-family: $base-font;
-	font-weight: 400;
+	font-weight: 100;
 
 	@include font-size($base-fs, $base-fs * 1.5, 0.5px);
 
