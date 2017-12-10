@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<header class="entry-header single-header" style="background-image: linear-gradient( transparent, #000), url(<?php echo the_post_thumbnail_url(); ?>);">
+	<header class="entry-header single-header" style="background: linear-gradient( transparent, #000), url(<?php echo the_post_thumbnail_url(); ?>); background-position: center; background-size: cover; background-repeat: no-repeat;">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">

@@ -40,7 +40,7 @@ get_header(); ?>
 
 								</div>
 								<div class="col-lg-8">
-									<iframe width="100%" height="350" src="https://www.youtube.com/embed/tHjdFuHvVtg?start=44&end=55" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+									<iframe width="100%" height="450" src="https://www.youtube.com/embed/tHjdFuHvVtg?start=44&end=55" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
